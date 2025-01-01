@@ -153,18 +153,19 @@
       .btn {
         display: inline-block;
         padding: 12px 24px;
-        background-color: var(--spotify-green);
-        color: var(--spotify-black);
+        background-color: var(--spotify-green); /* Use your defined color */
+        color: var(--spotify-black); /* Text color */
         text-decoration: none;
-        border-radius: 50px;
+        border-radius: 50px; /* Rounded corners */
+        background-color: var(--third); /* Change background color on hover */
         transition:
           transform 0.3s,
-          background-color 0.3s;
+          background-color 0.3s; /* Transition effects */
       }
 
       .btn:hover {
-        transform: scale(1.05);
-        background-color: var(--third);
+        transform: scale(1.05); /* Slightly enlarge on hover */
+        background-color: var(--third); /* Change background color on hover */
       }
 
       .projects {
@@ -259,6 +260,30 @@
         .skills {
           justify-content: center;
         }
+      }
+
+      .project-link {
+        text-decoration: none; /* Remove underline */
+        color: inherit; /* Inherit color from parent elements */
+      }
+
+      .project-card {
+        /* Optional: Add styles to ensure the card looks good */
+        display: block; /* Makes the entire card clickable */
+      }
+
+      .see-project-button {
+        background-color: #007bff; /* Button background color */
+        color: white; /* Text color */
+        border: none; /* No border */
+        padding: 10px 15px; /* Padding */
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer; /* Pointer cursor on hover */
+        transition: background-color 0.3s; /* Smooth transition */
+      }
+
+      .see-project-button:hover {
+        background-color: #0056b3; /* Darker blue on hover */
       }
     </style>
     <script>
@@ -383,6 +408,7 @@
     </section>
 
     <!-- Projects Section -->
+    <!-- Projects Section -->
     <section id="projects" class="projects">
       <div class="projects-grid">
         <!-- Trading Bot Project -->
@@ -400,6 +426,9 @@
               <span class="project-tag">Trading</span>
               <span class="project-tag">Discord API</span>
             </div>
+            <a href="link-to-trading-bot-project.html" class="btn"
+              >See Project</a
+            >
           </div>
         </div>
 
@@ -414,6 +443,7 @@
               <span class="project-tag">Golang</span>
               <span class="project-tag">Co-fondateur</span>
             </div>
+            <a href="link-to-minata-project.html" class="btn">See Project</a>
           </div>
         </div>
 
@@ -432,6 +462,7 @@
               <span class="project-tag">Golang</span>
               <span class="project-tag">Co-fondateur</span>
             </div>
+            <a href="https://babacoiffure.com" class="btn">See Project</a>
           </div>
         </div>
       </div>
